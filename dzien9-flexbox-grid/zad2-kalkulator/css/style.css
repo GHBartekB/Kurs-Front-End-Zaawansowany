@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+
+
+}
+
+.panel {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    flex-basis: 60%;
+    min-width: 500px;
+    height: 85vh;
+    justify-content: space-between;
+    align-content: space-between;
+
+}
+
+
+.panel .result {
+    height: 15vh;
+    line-height: 15vh;
+    flex-basis: 100%;
+    background-color: #000;
+    text-align: right;
+    padding-right: 50px;
+
+
+}
+
+.panel div {
+    flex-basis: 30%;
+    height: 10vh;
+    font-size: 5vh;
+    background-color: cadetblue;
+    color: white;
+    text-align: center;
+    line-height: 10vh;
+    transition: 0.3s;
+    cursor: pointer;
+
+}
+
+.panel div~div:hover {
+    background-color: black;
+    color: white;
+}
+
+.panel div:nth-last-child(1),
+.panel div:nth-last-child(2) {
+
+    flex-basis: 45%;
+}

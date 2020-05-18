@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+section {
+    width: 80%;
+    margin: 0 auto;
+    min-height: 50vh;
+}
+
+.s1 {
+    height: 120vh;
+    background-color: brown;
+}
+
+.s2 {
+    height: 80vh;
+    background-color: green;
+}
+
+.s3 {
+
+    background-color: blue;
+}
+
+.s4 {
+    height: 140vh;
+    background-color: orange;
+}
+
+nav {
+    position: fixed;
+    top: 30%;
+    bottom: 30%;
+    left: 0;
+    width: 60px;
+    padding: 2px;
+    background-color: ccc;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #ddd;
+}
+
+nav li {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.dot1 {
+
+    background-color: brown;
+}
+
+.dot2 {
+    background-color: green;
+}
+
+.dot3 {
+
+    background-color: blue;
+}
+
+.dot4 {
+
+    background-color: orange;
+}
+
+.active {
+    box-shadow: 0 0 0 3px white, 0 0 0 6px red
+}

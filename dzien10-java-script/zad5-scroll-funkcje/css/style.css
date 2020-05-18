@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 300vh;
+
+}
+
+p {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    font-size: 40px;
+}

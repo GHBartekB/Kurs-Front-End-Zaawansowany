@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 100vh;
+    font-size: 60px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+button {
+    position: fixed;
+    font-size: 40px;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+    border: 2px solid black;
+    min-width: 250px;
+    cursor: pointer;
+}
+
+
+button:nth-of-type(1) {
+
+    top: 40px;
+    left: 50px;
+
+}
+
+button:nth-of-type(2) {
+    top: 40px;
+    right: 50px;
+
+}
+
+
+
+
+span {
+    font-weight: bold;
+}

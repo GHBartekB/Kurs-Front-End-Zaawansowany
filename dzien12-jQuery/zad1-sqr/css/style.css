@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 20px 50px;
+}
+
+button {
+    border: 3px solid black;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    color: black;
+    background-color: transparent;
+    margin: 0 30px 30px 0;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.box {
+    float: left;
+    background-color: cadetblue;
+    width: 100px;
+    height: 100px;
+    animation: create 0.6s linear both;
+
+
+}
+
+@keyframes create {
+
+
+    0% {
+
+        width: 0;
+        height: 0;
+        transform: rotate(0deg);
+    }
+
+    100% {
+        width: 100px;
+        height: 100px;
+        transform: rotate(360deg);
+    }
+}

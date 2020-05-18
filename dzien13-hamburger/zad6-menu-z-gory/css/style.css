@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 200vh;
+
+}
+
+.wrapper {
+    margin: 10px 70px;
+
+}
+
+.wrapper p {
+    font-size: 18px;
+    line-height: 200%;
+
+}
+
+
+
+.burger {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    font-size: 50px;
+    z-index: 1;
+    transition: .3s;
+}
+
+.burger:hover {
+    cursor: pointer;
+}
+
+i.off {
+    display: none;
+
+}
+
+.fa-angle-up {
+    color: white;
+}
+
+nav {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    top: 0;
+    height: 30vh;
+    background-color: #000;
+    transition: .3s;
+}
+
+nav.off {
+    top: -30vh;
+}

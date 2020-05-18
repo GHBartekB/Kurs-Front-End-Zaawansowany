@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    background-color: #ddd;
+    width: 80%;
+    margin: 100px auto;
+    font-family: sans-serif;
+    color: white;
+    font-size: 80px;
+    border: 3px solid red;
+}
+
+div {
+
+    flex-basis: 30%;
+    margin: 15px;
+    padding: 50px;
+
+}
+
+.f1 {
+    background-color: darkcyan;
+}
+
+.f2 {
+    background-color: darkred;
+}
+
+.f3 {
+    background-color: darkolivegreen;
+}

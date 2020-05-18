@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 200vh;
+}
+
+.rect {
+    position: absolute;
+    top: calc(100% - 5vw);
+    left: calc(50% - 5vw);
+    width: 10vw;
+    height: 10vw;
+    border: 2px solid black;
+    transform: rotate(-45deg);
+    z-index: 2;
+    background-color: #fff;
+}
+
+.line {
+
+    position: absolute;
+    top: calc(100% - 4px);
+    left: 0;
+    width: 100%;
+    border-top: 8px dashed black;
+
+    z-index: 1;
+
+}

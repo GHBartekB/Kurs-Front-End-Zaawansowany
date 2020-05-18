@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+li {
+    flex-basis: 20%;
+}
+
+a {
+    display: block;
+    background-color: #444;
+    font-size: 22px;
+    text-align: center;
+    color: white;
+    font-family: sans-serif;
+    text-decoration: none;
+    padding: 20px;
+    margin: 15px;
+}
+
+a:hover {
+    background-color: #000;
+}
+
+@media(min-width:1025px) {
+    ul {
+        flex-direction: row;
+    }
+
+    a {
+        margin: 0;
+    }
+}

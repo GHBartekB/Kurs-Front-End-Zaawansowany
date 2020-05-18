@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div.clock {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0deg);
+    height: 40vw;
+    width: 40vw;
+    background-color: brown;
+    border-radius: 50%;
+
+}
+
+.clock:hover>.hand {
+    transform: translate(-50%, -100%) rotate(360deg);
+
+}
+
+div.hand {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 16vw;
+    width: 0.5vw;
+    transform: translate(-50%, -100%);
+    transform-origin: 50% 100%;
+    border-radius: 10%;
+    background-color: black;
+    transition: 60s steps(60);
+}

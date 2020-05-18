@@ -1,0 +1,32 @@
+nav {
+    height: 30vh;
+    width: 100vw;
+
+    ul {
+        @include display-flex(row, space-around);
+
+        li {
+            list-style: none;
+            flex-basis: 20%;
+            margin: 0 50px;
+
+            a {
+                display: block;
+                text-align: center;
+                color: $color-font;
+                text-decoration: none;
+                font-size: 40px;
+                line-height: 80px;
+                text-transform: uppercase;
+                background-color: #000;
+                padding: 20px;
+                transition: .3s;
+
+            }
+
+            a:hover {
+                background-color: #0ff;
+            }
+        }
+    }
+}

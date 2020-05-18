@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100px;
+    background-color: transparent;
+    font-size: 40px;
+    border-style: none;
+    border: 2px solid black;
+    border-radius: 20px;
+    margin-top: 50px;
+    margin-left: calc(50% - 100px);
+    overflow: hidden;
+    transition: 1s;
+
+}
+
+button:hover {
+    color: white;
+}
+
+
+button:hover::before {
+    width: 100%;
+}
+
+button::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    height: 100%;
+    width: 0;
+    background-color: #000;
+    transition: 1s;
+    z-index: -1;
+}

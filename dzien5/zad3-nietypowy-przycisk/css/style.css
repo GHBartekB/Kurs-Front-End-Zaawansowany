@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 100px calc(50% - 50px);
+    font-size: 40px;
+    padding: 10px 30px;
+    background-color: transparent;
+    border: 3px solid black;
+    overflow: hidden;
+    transition: 1s;
+}
+
+button:hover {
+    color: white;
+
+}
+
+button:hover::before {
+    left: 0;
+    height: 105%;
+}
+
+
+
+button::before {
+
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%);
+    height: 20px;
+    width: 100%;
+    content: "";
+    background-color: black;
+    transition: left 0.2s, height 0.1s 0.2s;
+    z-index: -1;
+}

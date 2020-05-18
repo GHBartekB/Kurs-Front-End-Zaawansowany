@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button {
+    margin: 50px 0 200px 100px;
+    width: 100px;
+    height: 50px;
+    background-color: brown;
+    color: white;
+    border: none;
+    font-family: arial, sans-serif;
+    cursor: pointer;
+}
+
+button:hover {
+
+    border: 1px solid white;
+}
+
+div {
+    position: absolute;
+    top: 150%;
+    left: -20%;
+}
+
+button:hover~div {
+    top: 50%;
+    left: 50%;
+}
+
+button:hover~div.walls {
+    height: 200px;
+    width: 300px;
+}
+
+button:hover~div.roof {
+    height: 212.1320px;
+    width: 212.1320px;
+}
+
+button:hover~div.chimney {
+    height: 212.1320px;
+    width: 212.1320px;
+    height: 40px;
+    width: 40px;
+}
+
+button:hover~div.door {
+    height: 80px;
+    width: 40px;
+}
+
+button:hover~div.firstWindow {
+    height: 50px;
+    width: 40px;
+}
+
+button:hover~div.secondWindow {
+    height: 50px;
+    width: 60px;
+}
+
+.walls {
+    transform: translate(-50%, -50%);
+    height: 0px;
+    width: 0px;
+    background-color: brown;
+    z-index: 2;
+    transition: 1s;
+}
+
+.roof {
+    transform: translate(-50%, calc(-50% - 100px)) rotate(45deg);
+    height: 0;
+    width: 0;
+    background-color: #000;
+    z-index: 1;
+    transition: 1.2s;
+
+    /* margin-left: calc(50% - 106.066px); */
+    /* transform: translateX(-50%); */
+}
+
+.chimney {
+
+    height: 0;
+    width: 0;
+    background-color: gray;
+    transform: translate(calc(-50% + 60px), calc(-50% - 180px));
+    transition: 1.3s;
+}
+
+.door {
+    height: 0;
+    width: 0;
+    transform: translate(-50%, calc(-50% + 60px));
+    background-color: darkgray;
+    z-index: 3;
+    transition: 1.5s;
+}
+
+.firstWindow {
+    height: 0;
+    width: 0;
+    background-color: yellow;
+    transform: translate(calc(-50% - 80px), calc(-50% - 35px));
+    z-index: 3;
+    transition: 1.5s;
+}
+
+.secondWindow {
+    height: 0;
+    width: 0;
+    background-color: yellow;
+    transform: translate(calc(-50% + 80px), calc(-50% - 30px));
+    z-index: 3;
+    transition: 1.5s;
+}

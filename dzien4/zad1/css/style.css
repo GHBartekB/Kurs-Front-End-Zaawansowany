@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div.circle {
+    height: 50px;
+    width: 50px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+div.red {
+
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: red;
+    text-align: center;
+}
+
+div.red:hover~div.bg {
+    background-color: red;
+}
+
+div.red:hover~div.bg p:nth-child(1) {
+
+    display: block;
+
+}
+
+div.green {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: green;
+}
+
+div.green:hover~div.bg p:nth-child(2) {
+    display: block;
+}
+
+div.green:hover~div.bg {
+    background-color: green;
+}
+
+div.blue {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: blue;
+}
+
+div.blue:hover~div.bg p:nth-child(3) {
+    display: block;
+
+}
+
+div.blue:hover~div.bg {
+    background-color: blue;
+}
+
+div.orange {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: orange;
+}
+
+div.orange:hover~div.bg p:nth-child(4) {
+
+    display: block;
+}
+
+
+
+div.orange:hover~div.bg {
+    background-color: orange;
+}
+
+
+
+div.bg {
+    background-color: gray;
+    height: 100vh;
+    text-align: center;
+    line-height: 100vh;
+    color: white;
+    text-transform: uppercase;
+    font-family: arial, sans-serif;
+    font-size: 50px;
+    transition: 1s;
+
+}
+
+p.red,
+p.green,
+p.blue,
+p.orange {
+
+    display: none;
+    transition-property: font-size 5s;
+
+}

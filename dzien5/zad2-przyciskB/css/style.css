@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    text-align: center;
+}
+
+button {
+    position: relative;
+    margin: 200px;
+    border-style: none;
+    line-height: 40px;
+    width: 400px;
+    background-color: white;
+    font-size: 40px;
+    overflow: hidden;
+
+
+}
+
+button:hover::before {
+    left: 0;
+}
+
+button::before {
+    position: absolute;
+    bottom: 0;
+    left: -100%;
+    content: "";
+    height: 4px;
+    width: 100%;
+    background-color: #000;
+    transition: 1s linear;
+
+
+}
+
+button:hover> {
+    left: 0;
+    width: 100%;
+}

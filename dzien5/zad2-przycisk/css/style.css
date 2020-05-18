@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    text-align: center;
+}
+
+button {
+    position: relative;
+    margin: 200px;
+    border-style: none;
+    line-height: 40px;
+    width: 400px;
+    background-color: white;
+    font-size: 40px;
+    overflow: hidden;
+
+
+}
+
+button:hover>span {
+    left: 0;
+    width: 100%;
+}
+
+span {
+    position: absolute;
+    bottom: 0;
+    left: -200%;
+    width: 0;
+    height: 3px;
+    background-color: #000;
+    transition: 1s;
+}

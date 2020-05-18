@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+.bell {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    width: 80px;
+    height: 80px;
+    border: 6px solid cadetblue;
+    border-radius: 50%;
+    font-size: 50px;
+    color: cadetblue;
+    text-align: center;
+    line-height: 80px;
+    transition: 0.5s;
+
+
+}
+
+.bell i {
+    animation: move 1s linear infinite alternate;
+    transform-origin: 50% 0;
+    transition: .5s;
+}
+
+.bell:hover {
+    background-color: cadetblue;
+}
+
+.bell:hover i {
+    color: white;
+    animation-duration: 0.5s;
+
+}
+
+
+@keyframes move {
+
+    0% {
+        transform: rotate(25deg);
+
+    }
+
+    50% {
+        transform: rotate(-25deg);
+    }
+
+    100% {
+        transform: rotate(25deg);
+    }
+}

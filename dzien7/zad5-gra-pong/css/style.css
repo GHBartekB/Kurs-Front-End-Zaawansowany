@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    --tableWidth: 700px;
+    --tableHeight: 400px;
+    --tableColor: #333;
+    --paddleWidth: 25px;
+    --paddleHeight: 80px;
+    --paddleColor: yellow;
+    --ballSize: 20px;
+    --ballColor: white;
+    --paddleFromEdge: 50px;
+    --animationTime: 5s;
+}
+
+.table,
+.ball,
+.paddle,
+.result {
+    position: absolute;
+}
+
+.table {
+    width: var(--tableWidth);
+    height: var(--tableHeight);
+    background-color: var(--tableColor);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.ball {
+    width: var(--ballSize);
+    height: var(--ballSize);
+    top: calc(50% - var(--ballSize)/2);
+    left: calc(50% - var(--ballSize)/2);
+    background-color: var(--ballColor);
+    border-radius: 50%;
+    animation: ballMove var(--animationTime) linear;
+
+}
+
+.paddle {
+    width: var(--paddleWidth);
+    height: var(--paddleHeight);
+    background-color: var(--paddleColor);
+}
+
+.player {
+    top: calc(50% - var(--paddleHeight)/2);
+    left: var(--paddleFromEdge);
+    animation: playerMove var(--animationTime) linear both;
+
+}
+
+.ai {
+    top: calc(50% - var(--paddleHeight)/2);
+    right: var(--paddleFromEdge);
+    animation: paddleMove var(--animationTime) linear both;
+
+}
+
+.result {
+
+    width: 100%;
+    left: 0;
+    top: 10%;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: sans-serif;
+    color: black;
+    transform: scale(0);
+    animation: txt var(--animationTime) 1.5s linear both;
+}
+
+@keyframes ballMove {
+
+    0% {
+        top: calc(50% - var(--ballSize)/2);
+        left: calc(50% - var(--ballSize)/2);
+    }
+
+    20% {
+        top: calc(75% - var(--ballSize)/2);
+        /* left: calc(50% + var(--paddleFromEdge) + var(--paddleWidth) + var(--ballSize) + 120px); */
+        left: 605px;
+    }
+
+    40% {
+        top: calc(50% - var(--ballSize)/2);
+        left: calc(50% - var(--ballSize)/2);
+    }
+
+    60% {
+        top: calc(25% - var(--ballSize)/2);
+        left: 75px;
+    }
+
+    80% {
+
+        /* top: calc(5% - var(--ballSize)); */
+        top: 0;
+        left: calc(50% + var(--ballSize)/2);
+
+    }
+
+
+    100% {
+        top: 80px;
+        left: 100%;
+
+    }
+
+
+}
+
+@keyframes paddleMove {
+
+    0% {
+        top: calc(50% - var(--paddleHeight)/2);
+    }
+
+    30% {
+        top: calc(90% - var(--paddleHeight)/2);
+    }
+
+    60% {
+        top: calc(50% - var(--paddleHeight)/2);
+    }
+
+    100% {
+        top: calc(30% - var(--paddleHeight)/2);
+    }
+
+
+}
+
+@keyframes playerMove {
+    0% {
+        top: calc(50% - var(--paddleHeight)/2);
+    }
+
+    30% {
+        top: calc(90% - var(--paddleHeight)/2);
+    }
+
+    60% {
+        top: calc(30% - var(--paddleHeight)/2);
+    }
+
+    100% {
+        top: calc(50% - var(--paddleHeight)/2);
+    }
+
+}
+
+@keyframes txt {
+    0% {
+        transform: scale(0);
+    }
+
+    75% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+
+    }
+}
